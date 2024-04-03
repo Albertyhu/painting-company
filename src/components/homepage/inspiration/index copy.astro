@@ -1,0 +1,48 @@
+---
+import TextPanel from "./textpanel.astro";
+import ImagePanel from "./image-panel.astro";
+---
+
+<div class="max-w-[1200px] mx-auto mt-10 grid sm:grid-cols-2 gap-5 px-[15px]">
+  <div class="flex flex-row md:grid md:grid-cols-2 gap-4 h-auto w-full">
+    <ImagePanel>
+      <img
+        src="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe79ce0b3b10d26a184e_gallery%202.webp"
+        loading="lazy"
+        sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 97vw, (max-width: 1279px) 98vw, (max-width: 1919px) 1170px, 1570px"
+        srcset="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe79ce0b3b10d26a184e_gallery%202-p-500.webp 500w, https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe79ce0b3b10d26a184e_gallery%202-p-800.webp 800w, https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe79ce0b3b10d26a184e_gallery%202-p-1080.webp 1080w, https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe79ce0b3b10d26a184e_gallery%202.webp 1200w"
+        alt="Interior Painting"
+        class="lightbox-image object-cover cursor-pointer"
+      />
+    </ImagePanel>
+    <ImagePanel>
+      <img
+        src="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe77ccdff403a5ba2713_gallery%203.webp"
+        alt="Interior Painting"
+        alt="Interior Painting"
+        class="lightbox-image object-cover cursor-pointer"
+      />
+    </ImagePanel>
+    <ImagePanel>
+      <img
+        src="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe7755887760d5496169_gallery1.webp"
+        loading="lazy"
+        sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 97vw, (max-width: 1279px) 98vw, (max-width: 1919px) 1170px, 1570px"
+        srcset="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe7755887760d5496169_gallery1.webp"
+        alt="Interior Painting"
+        class="lightbox-image object-cover cursor-pointer"
+      />
+    </ImagePanel>
+    <ImagePanel>
+      <img
+        src="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe77c807cc544f5e8b34_gallery%204.webp"
+        loading="lazy"
+        sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 97vw, (max-width: 1279px) 98vw, (max-width: 1919px) 1170px, 1570px"
+        srcset="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe77c807cc544f5e8b34_gallery%204-p-500.webp 500w, https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe77c807cc544f5e8b34_gallery%204-p-800.webp 800w, https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe77c807cc544f5e8b34_gallery%204-p-1080.webp 1080w, https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe77c807cc544f5e8b34_gallery%204.webp 1200w"
+        alt="Interior Painting"
+        class="lightbox-image cursor-pointer"
+      />
+    </ImagePanel>
+  </div>
+  <TextPanel />
+</div>
