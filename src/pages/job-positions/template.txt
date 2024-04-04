@@ -1,0 +1,10 @@
+---
+layout: ../../layout/jobLayout.astro
+position: 
+responsibilities: []
+qualifications: []
+benefits: [] 
+jobType: 
+hours: 
+location: 
+---

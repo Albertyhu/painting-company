@@ -1,5 +1,6 @@
 ---
-
+import { BusinessInfo } from "@/data/business-info.js";
+var YEAR = new Date().getUTCFullYear();
 ---
 
 <div class="footer">
@@ -115,7 +116,7 @@
       class="footer-bottom-wrapper"
     >
       <div class="footer-copyright">
-        © Painting. All Rights Reserved 2024. <a
+        © {BusinessInfo.companyName}. All Rights Reserved {YEAR}. <a
           href="/templates/licensing"
           class="footer-copyright-link">Licensing</a
         >
