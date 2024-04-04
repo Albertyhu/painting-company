@@ -1,0 +1,15 @@
+---
+const { image, altText, customImgStyle } = Astro.props;
+---
+
+<div
+  class="w-full h-[300px] sm:max-w-[300px] mx-auto rounded-lg overflow-hidden object-cover transition-all duration-500"
+>
+  <img
+    src={typeof image === "string" ? image : image.src}
+    loading="lazy"
+    alt={altText}
+    decoding="async"
+    class={`object-cover cursor-pointer ${customImgStyle}`}
+  />
+</div>

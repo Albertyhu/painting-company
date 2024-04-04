@@ -1,6 +1,6 @@
 ---
 import TextPanel from "./textpanel.astro";
-import ImagePanel from "./image-panel.astro";
+import ImagePanel from "../../image-panel.astro";
 ---
 
 <div
@@ -9,38 +9,26 @@ import ImagePanel from "./image-panel.astro";
   <div
     class="flex flex-col mx-auto sm:grid sm:grid-cols-[50%_50%] gap-y-4 h-auto w-full"
   >
-    <ImagePanel>
-      <img
-        src="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe79ce0b3b10d26a184e_gallery%202.webp"
-        loading="lazy"
-        alt="Interior Painting"
-        class="lightbox-image object-cover cursor-pointer"
-      />
-    </ImagePanel>
-    <ImagePanel>
-      <img
-        src="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe77ccdff403a5ba2713_gallery%203.webp"
-        alt="Interior Painting"
-        alt="Interior Painting"
-        class="lightbox-image object-cover cursor-pointer"
-      />
-    </ImagePanel>
-    <ImagePanel>
-      <img
-        src="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe7755887760d5496169_gallery1.webp"
-        loading="lazy"
-        alt="Interior Painting"
-        class="lightbox-image object-cover cursor-pointer"
-      />
-    </ImagePanel>
-    <ImagePanel>
-      <img
-        src="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe77c807cc544f5e8b34_gallery%204.webp"
-        loading="lazy"
-        alt="Interior Painting"
-        class="lightbox-image cursor-pointer"
-      />
-    </ImagePanel>
+    <ImagePanel
+      image="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe79ce0b3b10d26a184e_gallery%202.webp"
+      altText="Interior Painting"
+      customImgStyle="lightbox-image"
+    />
+    <ImagePanel
+      image="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe77ccdff403a5ba2713_gallery%203.webp"
+      altText="Interior Painting"
+      customImgStyle="lightbox-image"
+    />
+    <ImagePanel
+      image="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe7755887760d5496169_gallery1.webp"
+      altText="Interior Painting"
+      customImgStyle="lightbox-image"
+    />
+    <ImagePanel
+      image="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655cbe77c807cc544f5e8b34_gallery%204.webp"
+      altText="Interior Painting"
+      customImgStyle="lightbox-image"
+    />
   </div>
   <TextPanel />
 </div>

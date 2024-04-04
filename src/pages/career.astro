@@ -1,6 +1,7 @@
 ---
 import NavBar from "@/components/navbar/index.astro";
 import Footer from "@/components/footer/index.astro";
+import { BusinessInfo } from "@/data/business-info.js";
 ---
 
 <!doctype html>
@@ -132,9 +133,9 @@ import Footer from "@/components/footer/index.astro";
             <h6 class="section-subtitle">our values</h6>
             <h2>We offer different Painting services</h2>
             <p class="paragraph-large">
-              &quot;Painting&quot; is a renowned painting company specializing
-              in transforming both residential and commercial spaces into works
-              of art.<br />
+              &quot;{BusinessInfo.companyName}&quot; is a renowned painting
+              company specializing in transforming both residential and
+              commercial spaces into works of art.<br />
             </p>
             <div class="values-counter-wrapper">
               <div class="values-counter-item">

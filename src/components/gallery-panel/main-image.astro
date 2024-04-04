@@ -1,0 +1,13 @@
+---
+const { image, altText } = Astro.props;
+---
+
+<div class="object-cover h-full w-full overflow-hidden rounded-lg">
+  <img
+    src={typeof image === "string" ? image : image.src}
+    loading="lazy"
+    decoding="async"
+    alt={altText}
+    class="h-full w-full transition-all duration-[1s] hover:scale-150"
+  />
+</div>

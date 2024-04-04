@@ -1,7 +1,7 @@
 ---
 import LeftArrow from "@/assets/icons/left.png";
 import RightArrow from "@/assets/icons/right.png";
-import Star from "@/assets/icons/star.png";
+const { id = "2f947911-df0a-9721-d242-8ce8bc528d5d" } = Astro.props;
 ---
 
 <div class="section">
@@ -15,7 +15,7 @@ import Star from "@/assets/icons/star.png";
       style="opacity:0"
       data-hide-arrows="false"
       data-disable-swipe="false"
-      data-w-id="2f947911-df0a-9721-d242-8ce8bc528d5d"
+      data-w-id={id}
       data-autoplay-limit="0"
       data-nav-spacing="5"
       data-duration="500"
@@ -75,7 +75,6 @@ import Star from "@/assets/icons/star.png";
           </div>
         </div>
       </div>
-      <a href="/testimonials" class="link-with-underline">READ MORE REVIEWS</a>
       <div class="testimonials-slider-arrow-2 w-slider-arrow-left">
         <div class="testimonials-slider-arrow-icon-2">
           <img src={LeftArrow.src} alt="Left Arrow" />

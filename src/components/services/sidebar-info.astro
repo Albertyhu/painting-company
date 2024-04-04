@@ -1,0 +1,45 @@
+---
+import { formatPhone } from "@/hooks/number.js";
+import { BusinessInfo } from "@/data/business-info.js";
+---
+
+<div class="service-details-sidebar-wrapper">
+  <h5 class="text-center text-2xl">Have Additional Questions?</h5>
+  <div class="service-details-sidebar-contacts">
+    <div class="contacts-detail">
+      <p class="contacts-icon"></p>
+      <a
+        href="https://maps.app.goo.gl/GuWGF1j3oT2sjeLc6"
+        target="_blank"
+        class="paragraph-no-margin"
+        ><span>{BusinessInfo.street}</span>, <span>{BusinessInfo.city}</span>
+        <span>{BusinessInfo.state}</span>, <span>{BusinessInfo.country}</span
+        ></a
+      >
+    </div>
+    <div class="contacts-detail">
+      <p class="contacts-icon"></p>
+      {
+        BusinessInfo.phone && (
+          <a href={`tel:${BusinessInfo.phone}`} class="paragraph-no-margin">
+            {formatPhone(BusinessInfo.phone)}
+          </a>
+        )
+      }
+    </div>
+    <div class="contacts-detail">
+      <p class="contacts-icon"></p>
+      <a href="mailto:information@office.com" class="paragraph-no-margin"
+        >information@office.com</a
+      >
+    </div>
+  </div>
+  <a
+    data-w-id="ce5e33f2-035a-20f7-0d5a-a2f9bfb4f39e"
+    href="/contact-us"
+    class="dark-bubble-btn w-inline-block"
+  >
+    <div class="secondary-btn-text">Contact Us</div>
+    <div class="button-hover-circle"></div>
+  </a>
+</div>
