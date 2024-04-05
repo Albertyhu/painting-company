@@ -8,6 +8,6 @@ import netlify from "@astrojs/netlify";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react(), mdx()],
-  output: "server",
-  adapter: netlify()
+  output: "hybrid",
+  adapter: netlify(),
 });
