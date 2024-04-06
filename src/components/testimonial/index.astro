@@ -1,6 +1,7 @@
 ---
 import LeftArrow from "@/assets/icons/left.png";
 import RightArrow from "@/assets/icons/right.png";
+import { BusinessInfo } from "@/data/business-info";
 const { id = "2f947911-df0a-9721-d242-8ce8bc528d5d" } = Astro.props;
 ---
 
@@ -25,9 +26,9 @@ const { id = "2f947911-df0a-9721-d242-8ce8bc528d5d" } = Astro.props;
         <div class="w-slide">
           <div class="flex-vertical-align-center padding-tiny">
             <p class="teatimonial-text">
-              &quot;Choosing &#x27;Painting&#x27; for our home was the best
-              decision we made. From the initial color consultation to the
-              flawless execution of interior painting, they exceeded our
+              &quot;Choosing &quot;{BusinessInfo.companyName}&quot; for our home
+              was the best decision we made. From the initial color consultation
+              to the flawless execution of interior painting, they exceeded our
               expectations. The attention to detail and professionalism of the
               team truly transformed our living spaces. We couldn&#x27;t be
               happier!&quot;
@@ -43,11 +44,12 @@ const { id = "2f947911-df0a-9721-d242-8ce8bc528d5d" } = Astro.props;
         <div class="w-slide">
           <div class="flex-vertical-align-center padding-tiny">
             <p class="teatimonial-text">
-              &quot;As a business owner, I needed a painting service.
-              &#x27;Painting&#x27; not only revitalized our commercial space but
-              also worked closely with us to incorporate our brand colors
-              seamlessly. The result? A professional, inviting atmosphere that
-              perfectly aligns with our business identity.&quot;
+              &quot;As a business owner, I needed a painting service. &#x27;{
+                BusinessInfo.companyName
+              }&#x27; not only revitalized our commercial space but also worked
+              closely with us to incorporate our brand colors seamlessly. The
+              result? A professional, inviting atmosphere that perfectly aligns
+              with our business identity.&quot;
             </p>
             <div class="flex-vertical-align-center">
               <div class="margin-top-small">
@@ -60,11 +62,13 @@ const { id = "2f947911-df0a-9721-d242-8ce8bc528d5d" } = Astro.props;
         <div class="w-slide">
           <div class="flex-vertical-align-center padding-tiny">
             <p class="teatimonial-text">
-              Our building had seen better days, and &#x27;Painting&#x27;
-              brought it back to life. The exterior facade restoration was
-              completed with precision and efficiency. The attention to detail
-              and commitment to quality were evident throughout the process. I
-              highly recommend their services for any restoration project.&quot;
+              Our building had seen better days, and &quot;{
+                BusinessInfo.companyName
+              }&quot; brought it back to life. The exterior facade restoration
+              was completed with precision and efficiency. The attention to
+              detail and commitment to quality were evident throughout the
+              process. I highly recommend their services for any restoration
+              project.&quot;
             </p>
             <div class="flex-vertical-align-center">
               <div class="margin-top-small">

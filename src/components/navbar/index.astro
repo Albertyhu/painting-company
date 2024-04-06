@@ -1,3 +1,7 @@
+---
+import WhiteLogo from "@/assets/logo/white_logo.png";
+---
+
 <div
   data-animation="over-left"
   class="navbar-absolute w-nav"
@@ -22,21 +26,22 @@
       <div class="nav-right">
         <a href="/" class="brand w-nav-brand"
           ><img
-            src="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655f398871ca2edb51158846_logo.svg"
+            src={WhiteLogo.src}
             loading="lazy"
             alt="logo light"
             height="30"
-            class="logo-image"
-          /></a
-        >
+            class="logo-image !h-[56px]"
+          />
+        </a>
         <nav role="navigation" class="nav-menu w-nav-menu">
           <div class="tablet-menu">
-            <a href="/" class="brand-tablet w-nav-brand"
+            <a href="/" class="brand-tablet w-nav-brand !left-[0px]"
               ><img
-                src="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655f3a12541dcddfdd5c15ce_logo%20dark.svg"
+                src={WhiteLogo.src}
                 loading="lazy"
                 alt="logo dark"
                 height="30"
+                class="!h-[56px]"
               /></a
             >
             <div class="close-menu-button w-nav-button">

@@ -1,6 +1,7 @@
 ---
 import NavBar from "@/components/navbar/index.astro";
 import Footer from "@/components/footer/index.astro";
+import { BusinessInfo } from "@/data/business-info";
 ---
 
 <!doctype html>
@@ -120,10 +121,10 @@ import Footer from "@/components/footer/index.astro";
               <h2 class="mb-20">Chat with our support team to learn more</h2>
             </div>
             <p class="paragraph-large">
-              At Painting, we go beyond painting; we create experiences. Whether
-              it&#x27;s a residential haven or a commercial hub, let us
-              transform your spaces into works of art. Contact us today and
-              discover the difference a brushstroke can make.
+              At {BusinessInfo.companyName}, we go beyond painting; we create
+              experiences. Whether it&#x27;s a residential haven or a commercial
+              hub, let us transform your spaces into works of art. Contact us
+              today and discover the difference a brushstroke can make.
             </p>
             <div class="contacts-divider"></div>
             <div class="contacts-detail-wrapper">

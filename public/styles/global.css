@@ -8067,7 +8067,7 @@ figure {
 }
 
 .image-logo-dark {
-  height: 25px;
+  height: 40px;
 }
 
 .block-button-tablet {
@@ -9351,7 +9351,7 @@ figure {
   }
 
   .image-logo-dark {
-    height: 30px;
+    height: 60px;
   }
 
   .inner-content.full {
@@ -11503,6 +11503,7 @@ figure {
 
   .brand {
     padding-left: 0;
+    left: 0px !important;
   }
 
   .sessions-tab-link.first {

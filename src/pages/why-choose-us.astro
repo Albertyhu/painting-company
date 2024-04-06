@@ -2,6 +2,7 @@
 import NavBar from "@/components/navbar/index.astro";
 import Footer from "@/components/footer/index.astro";
 import Testimonials from "@/components/testimonial/index.astro";
+import { BusinessInfo } from "@/data/business-info";
 ---
 
 <!doctype html>
@@ -100,10 +101,10 @@ import Testimonials from "@/components/testimonial/index.astro";
                 style="opacity:0"
                 class="paragraph-large text-white"
               >
-                Working at &quot;Painting&quot; has been a fulfilling
-                experience, allowing me to contribute to the transformation of
-                spaces and witness the positive impact our work has on
-                clients&#x27; lives.
+                Working at &quot;{BusinessInfo.companyName}&quot; has been a
+                fulfilling experience, allowing me to contribute to the
+                transformation of spaces and witness the positive impact our
+                work has on clients&#x27; lives.
               </p>
             </div>
             <div
@@ -184,11 +185,12 @@ import Testimonials from "@/components/testimonial/index.astro";
           </div>
           <div class="about-content-wrap">
             <p class="paragraph-large">
-              &quot;Painting&quot; is a renowned painting company specializing
-              in transforming both residential and commercial spaces into works
-              of art. With a commitment to quality, creativity, and customer
-              satisfaction, &quot;Painting&quot; has become a trusted name in
-              the industry.
+              &quot;{BusinessInfo.companyName}&quot; is a renowned painting
+              company specializing in transforming both residential and
+              commercial spaces into works of art. With a commitment to quality,
+              creativity, and customer satisfaction, &quot;{
+                BusinessInfo.companyName
+              }&quot; has become a trusted name in the industry.
             </p>
           </div>
         </div>
@@ -589,8 +591,8 @@ import Testimonials from "@/components/testimonial/index.astro";
               <div class="service-content-wrap">
                 <div class="service-content-block">
                   <h2 class="text-center primary-color">
-                    &quot;Painting&quot; has become a trusted name in the
-                    industry.
+                    &quot;{BusinessInfo.companyName}&quot; has become a trusted
+                    name in the industry.
                   </h2>
                   <div class="home-btn-wrap">
                     <a

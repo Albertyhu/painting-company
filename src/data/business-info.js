@@ -1,5 +1,5 @@
 export const BusinessInfo = {
-  companyName: "Painting",
+  companyName: "Mark's Painting Service",
   street: "3700 S Federal Blvd.",
   city: "Englewood",
   state: "CO",
