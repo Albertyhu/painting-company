@@ -103,7 +103,6 @@ import "@/style/global.css";
 <script is:inline>
   const FixedNav = document.getElementById("services-nav-wrapper");
   window.addEventListener("scroll", () => {
-    console.log("position: ", window.scrollY);
     if (window.scrollY >= 500) {
       if (!FixedNav.classList.contains("services-nav-dark"))
         FixedNav.classList.add("services-nav-dark");
