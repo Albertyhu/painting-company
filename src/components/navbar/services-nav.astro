@@ -1,0 +1,114 @@
+---
+import WhiteLogo from "@/assets/logo/white_logo.png";
+import "@/style/global.css";
+---
+
+<div
+  class="fixed z-10 w-full top-0 left-0 right-0 services-nav"
+  id="services-nav-wrapper"
+>
+  <div class="nav-container w-container">
+    <div data-w-id="bdb2bafd-99f5-9fe9-0673-03b63dac843d" class="libe-block">
+      <div
+        data-w-id="bdb2bafd-99f5-9fe9-0673-03b63dac843e"
+        class="benefits-line"
+      >
+      </div>
+    </div>
+    <div class="nav-menu-wrapper">
+      <div class="nav-right">
+        <a href="/" class="brand w-nav-brand"
+          ><img
+            src="../../assets/images/white_logo.png"
+            loading="lazy"
+            alt="logo light"
+            height="30"
+            class="logo-image !h-[50px]"
+          />
+        </a>
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <div class="tablet-menu">
+            <a href="/" class="brand-tablet w-nav-brand !left-[0px]"
+              ><img
+                src={WhiteLogo.src}
+                loading="lazy"
+                alt="logo dark"
+                height="30"
+                class="!h-[56px]"
+              /></a
+            >
+            <div class="close-menu-button w-nav-button">
+              <img
+                src="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/655f22a1e1f5554d59ce3f76_close-btn.svg"
+                loading="lazy"
+                alt="icon close"
+                class="nav-close-icon"
+              />
+            </div>
+          </div>
+          <div class="menu-wrap">
+            <div class="left-side-block">
+              <div
+                data-hover="true"
+                data-delay="0"
+                data-w-id="ba67b287-f196-4627-29a8-f080f7e8b1b5"
+                class="nav-dropdown w-dropdown"
+              >
+                <div class="nav-dropdown-toggle w-dropdown-toggle">
+                  <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
+                  <a href="/"><p class="nav-item-title">Home</p></a>
+                </div>
+              </div>
+              <div
+                data-hover="true"
+                data-delay="0"
+                data-w-id="fd4a1481-9b78-d2fc-b55d-c82c302bbae3"
+                class="nav-dropdown w-dropdown"
+              >
+                <div class="nav-dropdown-toggle w-dropdown-toggle">
+                  <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
+                  <a href="/about-us"><p class="nav-item-title">About</p></a>
+                </div>
+              </div>
+              <a href="/services" class="nav-link w-nav-link">Services</a>
+            </div>
+            <div class="right-side-block">
+              <a href="/pricing" class="nav-link w-nav-link">Pricing</a>
+              <a href="/projects" class="nav-link w-nav-link">Projects</a>
+              <div
+                data-hover="true"
+                data-delay="0"
+                data-w-id="38f85906-eb0c-a15e-ac5d-afe2a8103fbc"
+                class="nav-dropdown w-dropdown"
+              >
+              </div>
+              <a href="/contact-us" class="nav-link w-nav-link">Contact</a>
+            </div>
+          </div>
+        </nav>
+        <div class="menu-button w-nav-button">
+          <img
+            src="https://assets-global.website-files.com/65576d2f478026e86cc17ae3/65576d30478026e86cc17c14_menu-btn.svg"
+            loading="lazy"
+            alt="icon"
+            height="16"
+            class="image-burger"
+          />
+          <div class="menu-button-text">Menu</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script is:inline>
+  const FixedNav = document.getElementById("services-nav-wrapper");
+  window.addEventListener("scroll", () => {
+    console.log("position: ", window.scrollY);
+    if (window.scrollY >= 500) {
+      if (!FixedNav.classList.contains("services-nav-dark"))
+        FixedNav.classList.add("services-nav-dark");
+    } else {
+      FixedNav.classList.remove("services-nav-dark");
+    }
+  });
+</script>

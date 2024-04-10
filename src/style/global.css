@@ -30,3 +30,11 @@
     background-position: 1920px 0;
   }
 }
+
+.services-nav-dark {
+  background-color: rgba(31, 30, 30, 0.9) !important;
+}
+
+.services-nav {
+  transition: background-color 500ms;
+}
