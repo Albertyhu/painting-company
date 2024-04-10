@@ -31,14 +31,14 @@ import WhiteLogo from "@/assets/logo/white_logo.png";
             loading="lazy"
             alt="logo light"
             height="30"
-            class="logo-image !h-[50px]"
+            class="logo-image !h-[50px] service-logo-image"
           />
         </a>
-        <nav role="navigation" class="nav-menu w-nav-menu">
+        <nav role="navigation" class="nav-menu w-nav-menu" id="mobile-menu">
           <div class="tablet-menu">
             <a href="/" class="brand-tablet w-nav-brand !left-[0px]"
               ><img
-                src={WhiteLogo.src}
+                src="../../assets/images/dark_logo.png"
                 loading="lazy"
                 alt="logo dark"
                 height="30"
@@ -63,7 +63,6 @@ import WhiteLogo from "@/assets/logo/white_logo.png";
                 class="nav-dropdown w-dropdown"
               >
                 <div class="nav-dropdown-toggle w-dropdown-toggle">
-                  <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
                   <a href="/"><p class="nav-item-title">Home</p></a>
                 </div>
               </div>
@@ -74,7 +73,6 @@ import WhiteLogo from "@/assets/logo/white_logo.png";
                 class="nav-dropdown w-dropdown"
               >
                 <div class="nav-dropdown-toggle w-dropdown-toggle">
-                  <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
                   <a href="/about-us"><p class="nav-item-title">About</p></a>
                 </div>
               </div>
