@@ -13006,4 +13006,11 @@ figure {
 
 .services-nav {
   transition: background-color 500ms;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.service-logo-image {
+  height: 50px;
 }
